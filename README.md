@@ -2,21 +2,22 @@
 Script to install Rocky Linux on Termux
 ## You Need
 - [Termux](https://f-droid.org/packages/com.termux)
+- [VNC Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android) (If you want to install desktop)
 ## Installation
 
-      apt update && apt dist-update && apt install proot-distro && curl -O https://github.com/arfshl/rocky-on-android/raw/main/install.sh && sh install.sh && rm install.sh
+    apt update && apt dist-update && apt install proot-distro && curl -O https://github.com/arfshl/rocky-on-android/raw/main/install.sh && sh install.sh && rm install.sh
 
 ### PRoot Login command
 
-      proot-distro login rocky
+    proot-distro login rocky
 
 ### [OPTIONAL] PRoot Auto-Login
 
-      echo 'proot-distro login rocky' >> $PREFIX/etc/bash.bashrc
+    echo 'proot-distro login rocky' >> $PREFIX/etc/bash.bashrc
 
 ### Repository setup, update package
 
-      curl -O https://github.com/arfshl/rocky-on-android/raw/main/update-first.sh && sh update-first.sh && rm update-first.sh
+    curl -O https://github.com/arfshl/rocky-on-android/raw/main/update-first.sh && sh update-first.sh && rm update-first.sh
 
 ## Install Graphical Environment
 ### Set up Pulseaudio
