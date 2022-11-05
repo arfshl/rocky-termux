@@ -5,4 +5,3 @@ TARBALL_SHA256['aarch64']="d9dc9dc91b684cbfe58998d1a5a8defd1a8510a546340e5c4c9d4
 
 chmod +x $PREFIX/etc/proot-distro/rocky.sh
 proot-distro install rocky
-echo 'To start Rocky Linux use proot-distro login rocky command'
