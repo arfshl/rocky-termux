@@ -1,7 +1,7 @@
 #!/bin/sh
 echo 'DISTRO_NAME="Rocky Linux"
-TARBALL_URL['aarch64']="https://github.com/rocky-linux/sig-cloud-instance-images/raw/Rocky-8.5-aarch64/rocky-8.5-docker-aarch64.tar.xz"
-TARBALL_SHA256['aarch64']="af1e610bc119444cff7edc38c42dd061578755efdf062f47d58d1a95b7c31612"' >> /$PREFIX/etc/proot-distro/rocky.sh
+TARBALL_URL['aarch64']="https://github.com/rocky-linux/sig-cloud-instance-images/raw/Rocky-9.0.20220720-Base-aarch64/layer.tar.xz"
+TARBALL_SHA256['aarch64']="d9dc9dc91b684cbfe58998d1a5a8defd1a8510a546340e5c4c9d40028f1f003d"' >> /$PREFIX/etc/proot-distro/rocky.sh
 
 chmod +x $PREFIX/etc/proot-distro/rocky.sh
 proot-distro install rocky
