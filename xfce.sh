@@ -1,8 +1,12 @@
 #!/bin/sh
 # This script is modification of https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Fedora/XFCE4/xfce4_de.sh (Licensed under MIT)
 echo 'Installing XFCE, please wait...'
+dnf install epel-release
+dnf config-manager --set-enabled powertools
+dnf install 'dnf-command(copr)'
+dnf copr enable stenstorp/lightdm
 dnf groupinstall xfce -y
-dnf install tigervnc-server dbus-x11 pulseaudio -y
+dnf install lightdm tigervnc-server dbus-x11 pulseaudio -y
 echo 'Setting up XFCE, please wait...'
 mkdir ~/.vnc
 
