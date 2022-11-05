@@ -32,3 +32,7 @@ Script to install Rocky Linux on Termux
 - XFCE
 
       curl -O https://raw.githubusercontent.com/arfshl/rocky-on-android/main/xfce.sh && sh xfce.sh && rm xfce.sh
+
+- MATE 
+
+      curl -O https://raw.githubusercontent.com/arfshl/rocky-on-android/main/mate.sh && sh mate.sh && rm mate.sh
