@@ -17,7 +17,7 @@ Script to install Rocky Linux on Termux
 
 ### Repository setup, update package
 
-    curl -O https://github.com/arfshl/rocky-on-android/raw/main/update-first.sh && sh update-first.sh && rm update-first.sh
+    dnf upgrade
 
 ## Install Graphical Environment
 ### Set up Pulseaudio
