@@ -17,3 +17,17 @@ Script to install Rocky Linux on Termux
 ### Repository setup, update package
 
       curl -O https://github.com/arfshl/rocky-on-android/raw/main/update-first.sh && sh update-first.sh && rm update-first.sh
+
+## Install Graphical Environment
+### Set up Pulseaudio
+
+    apt install pulseaudio -y && echo 'pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1' >> $PREFIX/etc/bash.bashrc
+
+### Desktop Environment
+- KDE 
+
+      curl -O https://raw.githubusercontent.com/arfshl/rocky-on-android/main/kde.sh && sh kde.sh && rm kde.sh
+
+- XFCE
+
+      curl -O https://raw.githubusercontent.com/arfshl/rocky-on-android/main/xfce.sh && sh xfce.sh && rm xfce.sh
