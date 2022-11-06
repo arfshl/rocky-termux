@@ -1,6 +1,8 @@
 bin/sh
 # This script is modification of https://raw.githubusercontent.com/EXALAB/Anlinux-Resources/master/Scripts/DesktopEnvironment/Heavy/KDE/Ubuntu/de-ubuntu-kde.sh (Licensed under GPL-2.0)
 echo 'Installing KDE, please wait...'
+dnf config-manager --set-enabled powertools
+dnf install epel-release
 dnf groupinstall "KDE Plasma Workspaces" --skip-broken
 dnf install tigervnc-server dbus-x11 pulseaudio tigervnc-server-module -y
 echo 'Setting up KDE, please wait...'
