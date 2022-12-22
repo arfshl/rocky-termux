@@ -5,7 +5,7 @@ Script to install Rocky Linux on Termux
 - [VNC Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android) (If you want to install desktop)
 ## Installation
 
-    apt update && apt dist-update && apt install proot-distro && curl -O https://github.com/arfshl/rocky-on-android/raw/main/install.sh && sh install.sh && rm install.sh
+    apt update && apt dist-update && apt install proot-distro && curl -O https://github.com/arfshl/rocky-termux/raw/main/install.sh && sh install.sh && rm install.sh
 
 ### PRoot Login command
 
@@ -27,12 +27,12 @@ Script to install Rocky Linux on Termux
 ### Desktop Environment
 - KDE 
 
-      curl -O https://raw.githubusercontent.com/arfshl/rocky-on-android/main/kde.sh && sh kde.sh && rm kde.sh
+      curl -O https://raw.githubusercontent.com/arfshl/rocky-termux/main/kde.sh && sh kde.sh && rm kde.sh
 
 - XFCE
 
-      curl -O https://raw.githubusercontent.com/arfshl/rocky-on-android/main/xfce.sh && sh xfce.sh && rm xfce.sh
+      curl -O https://raw.githubusercontent.com/arfshl/rocky-termux/main/xfce.sh && sh xfce.sh && rm xfce.sh
 
 - MATE 
 
-      curl -O https://raw.githubusercontent.com/arfshl/rocky-on-android/main/mate.sh && sh mate.sh && rm mate.sh
+      curl -O https://raw.githubusercontent.com/arfshl/rocky-termux/main/mate.sh && sh mate.sh && rm mate.sh
