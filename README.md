@@ -5,7 +5,7 @@ Script to install Rocky Linux on Termux
 - [VNC Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android) (If you want to install desktop)
 ## Installation
 
-    apt update && apt dist-upgrade && apt install proot-distro && curl -O https://raw.githubusercontent.com/arfshl/rocky-termux/main/install.sh && sh install.sh && rm install.sh
+    apt update && apt dist-upgrade -y && apt install proot-distro -y && curl -O https://raw.githubusercontent.com/arfshl/rocky-termux/main/install.sh && sh install.sh && rm install.sh
 
 ### PRoot Login command
 
