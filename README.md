@@ -24,6 +24,10 @@ Script to install Rocky Linux on Termux
 
     apt install pulseaudio -y && echo 'pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1' >> $PREFIX/etc/bash.bashrc
 
+### Fix for 'Dummy Output' on OneUI
+
+     echo 'LD_PRELOAD=/system/lib64/libskcodec.so' >> $PREFIX/etc/bash.bashrc
+
 ### Desktop Environment
 - KDE 
 
